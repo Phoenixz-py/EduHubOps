@@ -1,0 +1,153 @@
+<!-- <div class="min-h-screen flex items-center justify-center">
+  <div class="max-w-md w-full px-4 py-8">
+    <div class="bg-white p-6 rounded-lg shadow-md">
+      <h2 class="text-3xl font-semibold mb-6 text-gray-800">Create Student</h2>
+
+      <form (ngSubmit)="onSubmit()">
+        <div class="mb-6">
+          <label for="name" class="block text-gray-600 font-semibold"
+            >Name</label
+          >
+          <div class="relative">
+            <input
+              id="name"
+              name="name"
+              type="text"
+              [(ngModel)]="student.name"
+              class="border border-gray-300 rounded-lg p-3 w-full text-gray-800 focus:ring-indigo-400 focus:border-indigo-400"
+              placeholder="Enter student's name"
+              required
+            />
+          </div>
+        </div>
+        <div class="mb-6">
+          <label for="age" class="block text-gray-600 font-semibold">Age</label>
+          <div class="relative">
+            <input
+              id="age"
+              name="age"
+              type="number"
+              [(ngModel)]="student.age"
+              class="border border-gray-300 rounded-lg p-3 w-full text-gray-800 focus:ring-indigo-400 focus:border-indigo-400"
+              placeholder="Enter student's age"
+              required
+            />
+          </div>
+        </div>
+        <div class="mb-6">
+          <label for="email" class="block text-gray-600 font-semibold"
+            >Email</label
+          >
+          <div class="relative">
+            <input
+              id="email"
+              name="email"
+              type="email"
+              [(ngModel)]="student.email"
+              class="border border-gray-300 rounded-lg p-3 w-full text-gray-800 focus:ring-indigo-400 focus:border-indigo-400"
+              placeholder="Enter student's email"
+              required
+            />
+          </div>
+        </div>
+        <div class="mb-6">
+          <label for="class" class="block text-gray-600 font-semibold"
+            >Class</label
+          >
+          <div class="relative">
+            <input
+              id="class"
+              name="class"
+              type="number"
+              [(ngModel)]="student.class"
+              class="border border-gray-300 rounded-lg p-3 w-full text-gray-800 focus:ring-indigo-400 focus:border-indigo-400"
+              placeholder="Enter student's class"
+              required
+            />
+          </div>
+        </div>
+        <button
+          type="submit"
+          class="bg-indigo-500 text-white rounded-lg px-6 py-3 hover:bg-indigo-600 focus:outline-none"
+        >
+          Create Student
+        </button>
+      </form>
+    </div>
+  </div>
+</div> -->
+<div class="min-h-screen flex items-center justify-center bg-gray-100">
+  <div class="max-w-md w-full bg-white rounded-lg shadow-lg overflow-hidden">
+    <div class="p-6">
+      <h2 class="text-3xl font-semibold mb-6 text-gray-800">Create Student</h2>
+
+      <form (ngSubmit)="onSubmit()">
+        <div class="mb-6">
+          <label for="name" class="block text-gray-600 font-semibold">Name</label>
+          <div class="relative mt-2">
+            <input
+              id="name"
+              name="name"
+              type="text"
+              [(ngModel)]="student.name"
+              class="border border-gray-300 rounded-lg p-3 w-full text-gray-800 focus:ring-indigo-400 focus:border-indigo-400 focus:outline-none"
+              placeholder="Enter student's name"
+              required
+            />
+          </div>
+        </div>
+        <div class="mb-6">
+          <label for="age" class="block text-gray-600 font-semibold">Age</label>
+          <div class="relative mt-2">
+            <input
+              id="age"
+              name="age"
+              type="number"
+              [(ngModel)]="student.age"
+              class="border border-gray-300 rounded-lg p-3 w-full text-gray-800 focus:ring-indigo-400 focus:border-indigo-400 focus:outline-none"
+              placeholder="Enter student's age"
+              required
+            />
+          </div>
+        </div>
+        <div class="mb-6">
+          <label for="email" class="block text-gray-600 font-semibold">Email</label>
+          <div class="relative mt-2">
+            <input
+              id="email"
+              name="email"
+              type="email"
+              [(ngModel)]="student.email"
+              class="border border-gray-300 rounded-lg p-3 w-full text-gray-800 focus:ring-indigo-400 focus:border-indigo-400 focus:outline-none"
+              placeholder="Enter student's email"
+              required
+            />
+          </div>
+        </div>
+        <div class="mb-6">
+          <label for="class" class="block text-gray-600 font-semibold">Class</label>
+          <div class="relative mt-2">
+            <input
+              id="class"
+              name="class"
+              type="number"
+              [(ngModel)]="student.class"
+              class="border border-gray-300 rounded-lg p-3 w-full text-gray-800 focus:ring-indigo-400 focus:border-indigo-400 focus:outline-none"
+              placeholder="Enter student's class"
+              required
+            />
+          </div>
+        </div>
+        <div class="mt-6">
+          <button
+            type="submit"
+            class="bg-indigo-500 text-white rounded-lg px-6 py-3 hover:bg-indigo-600 focus:outline-none"
+          >
+            Create Student
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+

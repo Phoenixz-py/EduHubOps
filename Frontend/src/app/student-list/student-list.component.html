@@ -1,0 +1,80 @@
+<!-- <div class="container mx-auto">
+  <h2 class="text-3xl font-semibold text-gray-800 mb-8">Student List</h2>
+
+  <div class="mb-8">
+    <input
+      class="w-full px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-400"
+      type="text"
+      placeholder="Search students by name..."
+      [(ngModel)]="searchTerm"
+    />
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <ng-container *ngFor="let student of filteredStudents">
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img
+          src="https://loremflickr.com/g/640/360/all"
+          alt="{{ student.name }} Image"
+          class="w-full h-32 object-cover"
+        />
+        <div class="p-4">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">
+            {{ student.name }}
+          </h3>
+          <p class="text-gray-600">Age: {{ student.age }}</p>
+          <p class="text-gray-600">Email: {{ student.email }}</p>
+          <p class="text-gray-600">Class: {{ student.class }}</p>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div> -->
+<div class="container mx-auto">
+  <h2 class="text-3xl font-semibold text-gray-800 mb-8">Student List</h2>
+
+  <!-- Search Bar -->
+  <div class="mb-8">
+    <input
+      class="w-full px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-400"
+      type="text"
+      placeholder="Search students by name..."
+      [(ngModel)]="searchTerm"
+    />
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <ng-container *ngFor="let student of filteredStudents">
+      <!-- Student Card -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img
+          src="https://loremflickr.com/g/640/360/all"
+          alt="{{ student.name }} Image"
+          class="w-full h-32 object-cover"
+        />
+        <div class="p-4">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">
+            {{ student.name }}
+          </h3>
+          <p class="text-gray-600">Age: {{ student.age }}</p>
+          <p class="text-gray-600">Email: {{ student.email }}</p>
+          <p class="text-gray-600">Class: {{ student.class }}</p>
+
+          <!-- Delete Button -->
+          <button
+            class="mt-4 bg-red-500 text-white px-4 py-2 rounded-full hover:bg-red-600 transition duration-300 ease-in-out"
+            (click)="deleteStudent(student.id)"
+          >
+            <i class="fa fa-trash"></i> Delete
+          </button>
+          <button
+            class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300 ease-in-out ml-4"
+            (click)="openEditDialog(student)"
+          >
+            <i class="fa fa-pencil mr-2"></i> Edit
+          </button>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>
